@@ -12,7 +12,11 @@
 		9C6AF37D16208F620026AC3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6AF37C16208F620026AC3C /* CoreGraphics.framework */; };
 		9C6AF38316208F620026AC3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C6AF38116208F620026AC3C /* InfoPlist.strings */; };
 		9C6AF38516208F620026AC3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF38416208F620026AC3C /* main.m */; };
-		9C6AF38916208F620026AC3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF38816208F620026AC3C /* AppDelegate.m */; };
+		9C6AF39B16208FBD0026AC3C /* moes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C6AF39A16208FBD0026AC3C /* moes.jpg */; };
+		9C6AF3A316208FDE0026AC3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF39D16208FDE0026AC3C /* AppDelegate.m */; };
+		9C6AF3A416208FDE0026AC3C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF39F16208FDE0026AC3C /* DetailViewController.m */; };
+		9C6AF3A516208FDE0026AC3C /* StatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6AF3A016208FDE0026AC3C /* StatusView.xib */; };
+		9C6AF3A616208FDE0026AC3C /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3A216208FDE0026AC3C /* StatusViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,18 @@
 		9C6AF37816208F620026AC3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9C6AF37A16208F620026AC3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C6AF37C16208F620026AC3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9C6AF38016208F620026AC3C /* usffoodnow-Info.plist */ = {isa = PBXFileReference; path = "usffoodnow-Info.plist"; sourceTree = "<group>"; };
+		9C6AF38016208F620026AC3C /* usffoodnow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "usffoodnow-Info.plist"; sourceTree = "<group>"; };
 		9C6AF38216208F620026AC3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C6AF38416208F620026AC3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9C6AF38616208F620026AC3C /* usffoodnow-Prefix.pch */ = {isa = PBXFileReference; path = "usffoodnow-Prefix.pch"; sourceTree = "<group>"; };
-		9C6AF38716208F620026AC3C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		9C6AF38816208F620026AC3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C6AF38616208F620026AC3C /* usffoodnow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "usffoodnow-Prefix.pch"; sourceTree = "<group>"; };
+		9C6AF39A16208FBD0026AC3C /* moes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moes.jpg; sourceTree = "<group>"; };
+		9C6AF39C16208FDE0026AC3C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C6AF39D16208FDE0026AC3C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C6AF39E16208FDE0026AC3C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		9C6AF39F16208FDE0026AC3C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9C6AF3A016208FDE0026AC3C /* StatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView.xib; sourceTree = "<group>"; };
+		9C6AF3A116208FDE0026AC3C /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
+		9C6AF3A216208FDE0026AC3C /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,14 @@
 		9C6AF36916208F620026AC3C = {
 			isa = PBXGroup;
 			children = (
+				9C6AF39C16208FDE0026AC3C /* AppDelegate.h */,
+				9C6AF39D16208FDE0026AC3C /* AppDelegate.m */,
+				9C6AF39E16208FDE0026AC3C /* DetailViewController.h */,
+				9C6AF39F16208FDE0026AC3C /* DetailViewController.m */,
+				9C6AF3A016208FDE0026AC3C /* StatusView.xib */,
+				9C6AF3A116208FDE0026AC3C /* StatusViewController.h */,
+				9C6AF3A216208FDE0026AC3C /* StatusViewController.m */,
+				9C6AF39A16208FBD0026AC3C /* moes.jpg */,
 				9C6AF37E16208F620026AC3C /* usffoodnow */,
 				9C6AF37716208F620026AC3C /* Frameworks */,
 				9C6AF37516208F620026AC3C /* Products */,
@@ -72,8 +90,6 @@
 		9C6AF37E16208F620026AC3C /* usffoodnow */ = {
 			isa = PBXGroup;
 			children = (
-				9C6AF38716208F620026AC3C /* AppDelegate.h */,
-				9C6AF38816208F620026AC3C /* AppDelegate.m */,
 				9C6AF37F16208F620026AC3C /* Supporting Files */,
 			);
 			path = usffoodnow;
@@ -141,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6AF38316208F620026AC3C /* InfoPlist.strings in Resources */,
+				9C6AF39B16208FBD0026AC3C /* moes.jpg in Resources */,
+				9C6AF3A516208FDE0026AC3C /* StatusView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6AF38516208F620026AC3C /* main.m in Sources */,
-				9C6AF38916208F620026AC3C /* AppDelegate.m in Sources */,
+				9C6AF3A316208FDE0026AC3C /* AppDelegate.m in Sources */,
+				9C6AF3A416208FDE0026AC3C /* DetailViewController.m in Sources */,
+				9C6AF3A616208FDE0026AC3C /* StatusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
