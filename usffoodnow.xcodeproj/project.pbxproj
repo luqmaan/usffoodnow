@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2052ECA31620A9B100BF3F13 /* restaurants.db in Resources */ = {isa = PBXBuildFile; fileRef = 2052ECA21620A9B100BF3F13 /* restaurants.db */; };
 		9C6AF37916208F620026AC3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6AF37816208F620026AC3C /* UIKit.framework */; };
 		9C6AF37B16208F620026AC3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6AF37A16208F620026AC3C /* Foundation.framework */; };
 		9C6AF37D16208F620026AC3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6AF37C16208F620026AC3C /* CoreGraphics.framework */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2052ECA21620A9B100BF3F13 /* restaurants.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = restaurants.db; sourceTree = "<group>"; };
 		9C6AF37416208F620026AC3C /* usffoodnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usffoodnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6AF37816208F620026AC3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9C6AF37A16208F620026AC3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,6 +57,7 @@
 		9C6AF36916208F620026AC3C = {
 			isa = PBXGroup;
 			children = (
+				2052ECA21620A9B100BF3F13 /* restaurants.db */,
 				9C6AF39C16208FDE0026AC3C /* AppDelegate.h */,
 				9C6AF39D16208FDE0026AC3C /* AppDelegate.m */,
 				9C6AF39E16208FDE0026AC3C /* DetailViewController.h */,
@@ -159,6 +162,7 @@
 				9C6AF38316208F620026AC3C /* InfoPlist.strings in Resources */,
 				9C6AF39B16208FBD0026AC3C /* moes.jpg in Resources */,
 				9C6AF3A516208FDE0026AC3C /* StatusView.xib in Resources */,
+				2052ECA31620A9B100BF3F13 /* restaurants.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +280,7 @@
 				9C6AF38E16208F620026AC3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
