@@ -25,6 +25,7 @@
 		9C6AF3EC1620B9BA0026AC3C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3E51620B9BA0026AC3C /* FMDatabasePool.m */; };
 		9C6AF3ED1620B9BA0026AC3C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3E71620B9BA0026AC3C /* FMDatabaseQueue.m */; };
 		9C6AF3EE1620B9BA0026AC3C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3E91620B9BA0026AC3C /* FMResultSet.m */; };
+		9C6AF3EF1620BFC60026AC3C /* restaurants.db in Resources */ = {isa = PBXBuildFile; fileRef = 2052ECA21620A9B100BF3F13 /* restaurants.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -205,6 +206,7 @@
 			files = (
 				9C6AF38316208F620026AC3C /* InfoPlist.strings in Resources */,
 				9C6AF39B16208FBD0026AC3C /* moes.jpg in Resources */,
+				9C6AF3EF1620BFC60026AC3C /* restaurants.db in Resources */,
 				9C6AF3A516208FDE0026AC3C /* DetailsView.xib in Resources */,
 				9C6AF3AD16209EB40026AC3C /* StatusView.xib in Resources */,
 			);

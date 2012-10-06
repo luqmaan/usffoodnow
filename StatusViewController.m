@@ -19,12 +19,13 @@
     // Table view setup
     [statusView setDelegate:self];
     [statusView setDataSource:self];
-    
-    FMDatabase *db = [FMDatabase databaseWithPath:@"/Users/ricky/Desktop/usffoodnow/restaurants.db"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"retaurants" ofType:@".db"];
+    FMDatabase *db = [FMDatabase databaseWithPath:path];
     FMResultSet *results = [db executeQuery:@"SELECT * FROM restaurants"];
+    int weekday = [[[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:[NSDate date]] weekday];
+    // 7 = Saturday
 	while ([results next]) {
 		//retrieve values for each record
-       // NSString *test = results string
 	}
     
     
