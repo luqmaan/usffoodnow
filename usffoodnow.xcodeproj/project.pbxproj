@@ -15,8 +15,10 @@
 		9C6AF39B16208FBD0026AC3C /* moes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C6AF39A16208FBD0026AC3C /* moes.jpg */; };
 		9C6AF3A316208FDE0026AC3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF39D16208FDE0026AC3C /* AppDelegate.m */; };
 		9C6AF3A416208FDE0026AC3C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF39F16208FDE0026AC3C /* DetailViewController.m */; };
-		9C6AF3A516208FDE0026AC3C /* StatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6AF3A016208FDE0026AC3C /* StatusView.xib */; };
+		9C6AF3A516208FDE0026AC3C /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6AF3A016208FDE0026AC3C /* DetailsView.xib */; };
 		9C6AF3A616208FDE0026AC3C /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3A216208FDE0026AC3C /* StatusViewController.m */; };
+		9C6AF3AD16209EB40026AC3C /* StatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6AF3AC16209EB40026AC3C /* StatusView.xib */; };
+		9C6AF3B01620A4230026AC3C /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3AF1620A4220026AC3C /* Restaurant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +35,12 @@
 		9C6AF39D16208FDE0026AC3C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C6AF39E16208FDE0026AC3C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		9C6AF39F16208FDE0026AC3C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		9C6AF3A016208FDE0026AC3C /* StatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView.xib; sourceTree = "<group>"; };
+		9C6AF3A016208FDE0026AC3C /* DetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsView.xib; sourceTree = "<group>"; };
 		9C6AF3A116208FDE0026AC3C /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
 		9C6AF3A216208FDE0026AC3C /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
+		9C6AF3AC16209EB40026AC3C /* StatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView.xib; sourceTree = "<group>"; };
+		9C6AF3AE1620A4220026AC3C /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		9C6AF3AF1620A4220026AC3C /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +60,14 @@
 		9C6AF36916208F620026AC3C = {
 			isa = PBXGroup;
 			children = (
+				9C6AF3AE1620A4220026AC3C /* Restaurant.h */,
+				9C6AF3AF1620A4220026AC3C /* Restaurant.m */,
+				9C6AF3AC16209EB40026AC3C /* StatusView.xib */,
 				9C6AF39C16208FDE0026AC3C /* AppDelegate.h */,
 				9C6AF39D16208FDE0026AC3C /* AppDelegate.m */,
 				9C6AF39E16208FDE0026AC3C /* DetailViewController.h */,
 				9C6AF39F16208FDE0026AC3C /* DetailViewController.m */,
-				9C6AF3A016208FDE0026AC3C /* StatusView.xib */,
+				9C6AF3A016208FDE0026AC3C /* DetailsView.xib */,
 				9C6AF3A116208FDE0026AC3C /* StatusViewController.h */,
 				9C6AF3A216208FDE0026AC3C /* StatusViewController.m */,
 				9C6AF39A16208FBD0026AC3C /* moes.jpg */,
@@ -158,7 +166,8 @@
 			files = (
 				9C6AF38316208F620026AC3C /* InfoPlist.strings in Resources */,
 				9C6AF39B16208FBD0026AC3C /* moes.jpg in Resources */,
-				9C6AF3A516208FDE0026AC3C /* StatusView.xib in Resources */,
+				9C6AF3A516208FDE0026AC3C /* DetailsView.xib in Resources */,
+				9C6AF3AD16209EB40026AC3C /* StatusView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +182,7 @@
 				9C6AF3A316208FDE0026AC3C /* AppDelegate.m in Sources */,
 				9C6AF3A416208FDE0026AC3C /* DetailViewController.m in Sources */,
 				9C6AF3A616208FDE0026AC3C /* StatusViewController.m in Sources */,
+				9C6AF3B01620A4230026AC3C /* Restaurant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

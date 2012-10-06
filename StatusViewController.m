@@ -8,45 +8,18 @@
 
 #import "StatusViewController.h"
 
-@implementation Restaurant 
-- (id) init
-{
-    self = [super init];
-    menuItems = [[NSMutableArray alloc] init];
-    return self;
-}
-@end
-
-@implementation RestaurantCellView 
-- (void) encodeWithCoder:(NSCoder *)aCoder
-{
-    [super encodeWithCoder:aCoder];
-    [aCoder encodeObject:nameLabel forKey:@"nameLabel"];
-    [aCoder encodeObject:descriptionLabel forKey:@"descriptionLabel"];
-}
-- (id) initWithCoder:(NSCoder *)aDecoder
-{
-    self = [super initWithCoder:aDecoder];
-    if (self)
-    {
-        nameLabel = [aDecoder decodeObjectForKey:@"nameLabel"];
-        descriptionLabel = [aDecoder decodeObjectForKey:@"descriptionLabel"];
-    }
-    return self;
-}
-@end
-
 @implementation StatusViewController
+
 
 - (void) viewDidLoad
 {
     openRestaurants = [[NSMutableArray alloc] init];
     closedRestaurants = [[NSMutableArray alloc] init];
+    [self setTitle:@"Restaurants"];
     
     // Table view setup
     [statusView setDelegate:self];
     [statusView setDataSource:self];
-    
     
     // Test data    
     for (int i = 0; i < 10; ++i)
@@ -100,8 +73,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    detailViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentModalViewController:detailViewController animated:YES];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    UINavigationController *navController = appDelegate->navController;
+    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailsView" bundle:[NSBundle mainBundle] restaurant:[self SelectedRestaurant]];
+    [navController pushViewController:detailViewController animated:YES];
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:

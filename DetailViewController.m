@@ -10,22 +10,24 @@
 
 @implementation DetailViewController
 
-- (IBAction)Done
-{
-    [self dismissModalViewControllerAnimated:YES];
-}
-
 - (void) viewDidLoad
 {
+    [self setTitle:@"Details"];
     [menuTableView setDelegate:self];
     [menuTableView setDataSource:self];
 }
 
 - (void) viewWillAppear:(BOOL)animated // Set the active restuarant
 {
-    restaurant = [statusViewController SelectedRestaurant];
     NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:0];
     [menuTableView selectRowAtIndexPath:path animated:NO scrollPosition:UITableViewScrollPositionTop];
+}
+
+- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil restaurant:(Restaurant*)restuarauntToUse
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    restaurant = restuarauntToUse;
+    return self;
 }
 
 #pragma mark --

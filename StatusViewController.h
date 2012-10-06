@@ -8,30 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "DetailViewController.h"
-@class DetailViewController;
-@interface RestaurantCellView : UITableViewCell<NSCoding> {
-@public
-    IBOutlet UIImageView *imageView;
-    IBOutlet UILabel *nameLabel;
-    IBOutlet UILabel *descriptionLabel;
-}
-@end
-
-@interface Restaurant : NSObject {
-@public
-    NSString *name;
-    NSString *description;
-    UIImage *image;
-    NSMutableArray *menuItems;
-}
-@end
+#import "Restaurant.h"
+#import "AppDelegate.h"
 
 @interface StatusViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 {
     // UI Elements
     IBOutlet UITableView *statusView;
     IBOutlet RestaurantCellView *defaultCellStyleView;
-    IBOutlet DetailViewController *detailViewController;
     
     // Data
     NSMutableArray *openRestaurants, *closedRestaurants;

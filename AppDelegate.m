@@ -18,8 +18,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    StatusViewController *viewController = [[StatusViewController alloc] init];
-    [self.window setRootViewController:viewController];
+    
+    StatusViewController *viewController = [[StatusViewController alloc] initWithNibName:@"StatusView" bundle:[NSBundle mainBundle]]; 
+    
+    navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    [self.window setRootViewController:navController];
     [self.window makeKeyAndVisible];
     return YES;
 }

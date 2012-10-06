@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "StatusViewController.h"
+#import "Restaurant.h"
+#import "AppDelegate.h"
 
 @class Restaurant;
 @class StatusViewController;
@@ -15,9 +17,8 @@
 @interface DetailViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UIImageView *restaurantImageView;
-    IBOutlet StatusViewController *statusViewController;
     IBOutlet UITableView *menuTableView;
     Restaurant *restaurant;
 }
-- (IBAction)Done;
+- (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil restaurant:(Restaurant*)restuarauntToUse;
 @end
