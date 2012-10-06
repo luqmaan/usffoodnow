@@ -10,7 +10,6 @@
 
 @implementation StatusViewController
 
-
 - (void) viewDidLoad
 {
     openRestaurants = [[NSMutableArray alloc] init];
@@ -20,6 +19,14 @@
     // Table view setup
     [statusView setDelegate:self];
     [statusView setDataSource:self];
+    
+    FMDatabase *db = [FMDatabase databaseWithPath:@"/Users/ricky/Desktop/usffoodnow/restaurants.db"];
+    FMResultSet *results = [db executeQuery:@"SELECT * FROM restaurants"];
+	while ([results next]) {
+		//retrieve values for each record
+       // NSString *test = results string
+	}
+    
     
     // Test data    
     for (int i = 0; i < 10; ++i)
@@ -43,6 +50,7 @@
             [r->menuItems addObject:[NSString stringWithFormat:@"Item %d", j]];
         [closedRestaurants  addObject:r];
     }
+     
 }
 
 - (Restaurant*)SelectedRestaurant { 

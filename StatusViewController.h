@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "Restaurant.h"
 #import "AppDelegate.h"
+#import "FMDatabase.h"
 
 @interface StatusViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 {

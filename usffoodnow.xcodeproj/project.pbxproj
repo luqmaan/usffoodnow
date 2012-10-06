@@ -19,6 +19,12 @@
 		9C6AF3A616208FDE0026AC3C /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3A216208FDE0026AC3C /* StatusViewController.m */; };
 		9C6AF3AD16209EB40026AC3C /* StatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6AF3AC16209EB40026AC3C /* StatusView.xib */; };
 		9C6AF3B01620A4230026AC3C /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3AF1620A4220026AC3C /* Restaurant.m */; };
+		9C6AF3DE1620B8C60026AC3C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6AF3DD1620B8C50026AC3C /* libsqlite3.dylib */; };
+		9C6AF3EA1620B9BA0026AC3C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3E11620B9BA0026AC3C /* FMDatabase.m */; };
+		9C6AF3EB1620B9BA0026AC3C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3E31620B9BA0026AC3C /* FMDatabaseAdditions.m */; };
+		9C6AF3EC1620B9BA0026AC3C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3E51620B9BA0026AC3C /* FMDatabasePool.m */; };
+		9C6AF3ED1620B9BA0026AC3C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3E71620B9BA0026AC3C /* FMDatabaseQueue.m */; };
+		9C6AF3EE1620B9BA0026AC3C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF3E91620B9BA0026AC3C /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,17 @@
 		9C6AF3AC16209EB40026AC3C /* StatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusView.xib; sourceTree = "<group>"; };
 		9C6AF3AE1620A4220026AC3C /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
 		9C6AF3AF1620A4220026AC3C /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		9C6AF3DD1620B8C50026AC3C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9C6AF3E01620B9BA0026AC3C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "FMDB Source/FMDatabase.h"; sourceTree = "<group>"; };
+		9C6AF3E11620B9BA0026AC3C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "FMDB Source/FMDatabase.m"; sourceTree = "<group>"; };
+		9C6AF3E21620B9BA0026AC3C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "FMDB Source/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
+		9C6AF3E31620B9BA0026AC3C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "FMDB Source/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
+		9C6AF3E41620B9BA0026AC3C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "FMDB Source/FMDatabasePool.h"; sourceTree = "<group>"; };
+		9C6AF3E51620B9BA0026AC3C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "FMDB Source/FMDatabasePool.m"; sourceTree = "<group>"; };
+		9C6AF3E61620B9BA0026AC3C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "FMDB Source/FMDatabaseQueue.h"; sourceTree = "<group>"; };
+		9C6AF3E71620B9BA0026AC3C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "FMDB Source/FMDatabaseQueue.m"; sourceTree = "<group>"; };
+		9C6AF3E81620B9BA0026AC3C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "FMDB Source/FMResultSet.h"; sourceTree = "<group>"; };
+		9C6AF3E91620B9BA0026AC3C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "FMDB Source/FMResultSet.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6AF3DE1620B8C60026AC3C /* libsqlite3.dylib in Frameworks */,
 				9C6AF37916208F620026AC3C /* UIKit.framework in Frameworks */,
 				9C6AF37B16208F620026AC3C /* Foundation.framework in Frameworks */,
 				9C6AF37D16208F620026AC3C /* CoreGraphics.framework in Frameworks */,
@@ -61,6 +79,8 @@
 		9C6AF36916208F620026AC3C = {
 			isa = PBXGroup;
 			children = (
+				9C6AF3DF1620B90F0026AC3C /* FMDB Source */,
+				9C6AF3DD1620B8C50026AC3C /* libsqlite3.dylib */,
 				9C6AF3AE1620A4220026AC3C /* Restaurant.h */,
 				9C6AF3AF1620A4220026AC3C /* Restaurant.m */,
 				9C6AF3AC16209EB40026AC3C /* StatusView.xib */,
@@ -114,6 +134,23 @@
 				9C6AF38616208F620026AC3C /* usffoodnow-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C6AF3DF1620B90F0026AC3C /* FMDB Source */ = {
+			isa = PBXGroup;
+			children = (
+				9C6AF3E01620B9BA0026AC3C /* FMDatabase.h */,
+				9C6AF3E11620B9BA0026AC3C /* FMDatabase.m */,
+				9C6AF3E21620B9BA0026AC3C /* FMDatabaseAdditions.h */,
+				9C6AF3E31620B9BA0026AC3C /* FMDatabaseAdditions.m */,
+				9C6AF3E41620B9BA0026AC3C /* FMDatabasePool.h */,
+				9C6AF3E51620B9BA0026AC3C /* FMDatabasePool.m */,
+				9C6AF3E61620B9BA0026AC3C /* FMDatabaseQueue.h */,
+				9C6AF3E71620B9BA0026AC3C /* FMDatabaseQueue.m */,
+				9C6AF3E81620B9BA0026AC3C /* FMResultSet.h */,
+				9C6AF3E91620B9BA0026AC3C /* FMResultSet.m */,
+			);
+			name = "FMDB Source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +222,11 @@
 				9C6AF3A416208FDE0026AC3C /* DetailViewController.m in Sources */,
 				9C6AF3A616208FDE0026AC3C /* StatusViewController.m in Sources */,
 				9C6AF3B01620A4230026AC3C /* Restaurant.m in Sources */,
+				9C6AF3EA1620B9BA0026AC3C /* FMDatabase.m in Sources */,
+				9C6AF3EB1620B9BA0026AC3C /* FMDatabaseAdditions.m in Sources */,
+				9C6AF3EC1620B9BA0026AC3C /* FMDatabasePool.m in Sources */,
+				9C6AF3ED1620B9BA0026AC3C /* FMDatabaseQueue.m in Sources */,
+				9C6AF3EE1620B9BA0026AC3C /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
