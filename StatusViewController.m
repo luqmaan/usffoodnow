@@ -25,25 +25,73 @@
     [db setLogsErrors:true];
     FMResultSet *results = [db executeQuery:@"select * from restaurants"];
     int weekday = [[[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:[NSDate date]] weekday];
-    int hour = [[[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:[NSDate date]] hour];
+
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"HH:mm"];
+    NSString *timeString = [formatter stringFromDate:[NSDate date]];
+    
     // 7 = Saturday Open
 	while ([results next]) {
 		//retrieve values for each record
         NSString *name = [results stringForColumnIndex:0];
         NSString *open = [results stringForColumnIndex:weekday * 2 - 1];
         NSString *close = [results stringForColumnIndex:weekday * 2];
-        if (!open) open = @"Closed";
-        if (!close) close = @"Closed";
+        if (!open || timeString < open || timeString > close) open = @"Closed";
+        if (!close || timeString < open || timeString > close) close = @"Closed";
+        
+        if ([open isEqualToString:@"25:00"])
+            open = @"No Close";
+        if ([close isEqualToString:@"25:00"])
+            close = @"No Close";
         
         Restaurant *r = [[Restaurant alloc] init];
         r->name = name;
         r->open = open;
         r->close = close;
+        r->times = [[NSMutableArray alloc] init];
         
         if ([open isEqualToString:@"Closed"] || [close isEqualToString:@"Closed"])
             [closedRestaurants addObject:r];
         else
             [openRestaurants  addObject:r];
+        
+        for (int i = 1; i < 8; ++i)
+        {
+            Time *t = [[Time alloc] init];
+            switch (i) {
+                case 1:
+                    t->day = @"Sunday";
+                    break;
+                case 2:
+                    t->day = @"Monday";
+                    break;
+                case 3:
+                    t->day = @"Tuesday";
+                    break;
+                case 4:
+                    t->day = @"Wednesday";
+                    break;
+                case 5:
+                    t->day = @"Thursday";
+                    break;
+                case 6:
+                    t->day = @"Friday";
+                    break;
+                case 7:
+                    t->day = @"Saturday";
+                    break;
+            }
+            
+            NSString *open = [results stringForColumnIndex:i * 2 - 1];
+            NSString *close = [results stringForColumnIndex:i * 2];
+            if (!open) open = @"Closed";
+            if (!close) close = @"Closed";
+            if ([close isEqualToString:@"25:00"])
+                close = @"No Close";
+            t->open = open;
+            t->close = close;
+            [r->times addObject:t];
+        }
 	}
     
     /*

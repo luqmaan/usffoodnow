@@ -23,5 +23,12 @@
     NSString *open, *close;
     UIImage *image;
     NSMutableArray *menuItems;
+    NSMutableArray *times;
+}
+@end
+
+@interface Time : NSObject {
+@public
+    NSString *day, *open, *close;
 }
 @end
