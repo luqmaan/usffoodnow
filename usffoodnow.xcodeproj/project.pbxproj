@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C6AF37916208F620026AC3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6AF37816208F620026AC3C /* UIKit.framework */; };
+		9C6AF37B16208F620026AC3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6AF37A16208F620026AC3C /* Foundation.framework */; };
+		9C6AF37D16208F620026AC3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6AF37C16208F620026AC3C /* CoreGraphics.framework */; };
+		9C6AF38316208F620026AC3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C6AF38116208F620026AC3C /* InfoPlist.strings */; };
+		9C6AF38516208F620026AC3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF38416208F620026AC3C /* main.m */; };
+		9C6AF38916208F620026AC3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6AF38816208F620026AC3C /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C6AF37416208F620026AC3C /* usffoodnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usffoodnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6AF37816208F620026AC3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9C6AF37A16208F620026AC3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C6AF37C16208F620026AC3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9C6AF38016208F620026AC3C /* usffoodnow-Info.plist */ = {isa = PBXFileReference; path = "usffoodnow-Info.plist"; sourceTree = "<group>"; };
+		9C6AF38216208F620026AC3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C6AF38416208F620026AC3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C6AF38616208F620026AC3C /* usffoodnow-Prefix.pch */ = {isa = PBXFileReference; path = "usffoodnow-Prefix.pch"; sourceTree = "<group>"; };
+		9C6AF38716208F620026AC3C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C6AF38816208F620026AC3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C6AF37116208F620026AC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6AF37916208F620026AC3C /* UIKit.framework in Frameworks */,
+				9C6AF37B16208F620026AC3C /* Foundation.framework in Frameworks */,
+				9C6AF37D16208F620026AC3C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C6AF36916208F620026AC3C = {
+			isa = PBXGroup;
+			children = (
+				9C6AF37E16208F620026AC3C /* usffoodnow */,
+				9C6AF37716208F620026AC3C /* Frameworks */,
+				9C6AF37516208F620026AC3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C6AF37516208F620026AC3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C6AF37416208F620026AC3C /* usffoodnow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C6AF37716208F620026AC3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C6AF37816208F620026AC3C /* UIKit.framework */,
+				9C6AF37A16208F620026AC3C /* Foundation.framework */,
+				9C6AF37C16208F620026AC3C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C6AF37E16208F620026AC3C /* usffoodnow */ = {
+			isa = PBXGroup;
+			children = (
+				9C6AF38716208F620026AC3C /* AppDelegate.h */,
+				9C6AF38816208F620026AC3C /* AppDelegate.m */,
+				9C6AF37F16208F620026AC3C /* Supporting Files */,
+			);
+			path = usffoodnow;
+			sourceTree = "<group>";
+		};
+		9C6AF37F16208F620026AC3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C6AF38016208F620026AC3C /* usffoodnow-Info.plist */,
+				9C6AF38116208F620026AC3C /* InfoPlist.strings */,
+				9C6AF38416208F620026AC3C /* main.m */,
+				9C6AF38616208F620026AC3C /* usffoodnow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C6AF37316208F620026AC3C /* usffoodnow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C6AF38C16208F620026AC3C /* Build configuration list for PBXNativeTarget "usffoodnow" */;
+			buildPhases = (
+				9C6AF37016208F620026AC3C /* Sources */,
+				9C6AF37116208F620026AC3C /* Frameworks */,
+				9C6AF37216208F620026AC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = usffoodnow;
+			productName = usffoodnow;
+			productReference = 9C6AF37416208F620026AC3C /* usffoodnow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C6AF36B16208F620026AC3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9C6AF36E16208F620026AC3C /* Build configuration list for PBXProject "usffoodnow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9C6AF36916208F620026AC3C;
+			productRefGroup = 9C6AF37516208F620026AC3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C6AF37316208F620026AC3C /* usffoodnow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C6AF37216208F620026AC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6AF38316208F620026AC3C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C6AF37016208F620026AC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6AF38516208F620026AC3C /* main.m in Sources */,
+				9C6AF38916208F620026AC3C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C6AF38116208F620026AC3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C6AF38216208F620026AC3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C6AF38A16208F620026AC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9C6AF38B16208F620026AC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C6AF38D16208F620026AC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usffoodnow/usffoodnow-Prefix.pch";
+				INFOPLIST_FILE = "usffoodnow/usffoodnow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9C6AF38E16208F620026AC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usffoodnow/usffoodnow-Prefix.pch";
+				INFOPLIST_FILE = "usffoodnow/usffoodnow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C6AF36E16208F620026AC3C /* Build configuration list for PBXProject "usffoodnow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C6AF38A16208F620026AC3C /* Debug */,
+				9C6AF38B16208F620026AC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C6AF38C16208F620026AC3C /* Build configuration list for PBXNativeTarget "usffoodnow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C6AF38D16208F620026AC3C /* Debug */,
+				9C6AF38E16208F620026AC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C6AF36B16208F620026AC3C /* Project object */;
+}
