@@ -19,6 +19,9 @@
     IBOutlet UIImageView *restaurantImageView;
     IBOutlet UITableView *menuTableView;
     Restaurant *restaurant;
+    IBOutlet UILabel *openLabel;
+    IBOutlet UILabel *closedLabel;
+    IBOutlet UILabel *nameLabel;
 }
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil restaurant:(Restaurant*)restuarauntToUse;
 @end

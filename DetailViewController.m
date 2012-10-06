@@ -19,8 +19,11 @@
 
 - (void) viewWillAppear:(BOOL)animated // Set the active restuarant
 {
-    NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:0];
-    [menuTableView selectRowAtIndexPath:path animated:NO scrollPosition:UITableViewScrollPositionTop];
+    //NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:0];
+    //[menuTableView selectRowAtIndexPath:path animated:NO scrollPosition:UITableViewScrollPositionTop];
+    [openLabel setText:restaurant->open];
+    [closedLabel setText:restaurant->close];
+    [nameLabel setText:restaurant->name];
 }
 
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil restaurant:(Restaurant*)restuarauntToUse

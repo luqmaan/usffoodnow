@@ -19,16 +19,34 @@
     // Table view setup
     [statusView setDelegate:self];
     [statusView setDataSource:self];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"retaurants" ofType:@".db"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"restaurants.db" ofType:nil];
     FMDatabase *db = [FMDatabase databaseWithPath:path];
-    FMResultSet *results = [db executeQuery:@"SELECT * FROM restaurants"];
+    [db open];
+    [db setLogsErrors:true];
+    FMResultSet *results = [db executeQuery:@"select * from restaurants"];
     int weekday = [[[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:[NSDate date]] weekday];
-    // 7 = Saturday
+    int hour = [[[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:[NSDate date]] hour];
+    // 7 = Saturday Open
 	while ([results next]) {
 		//retrieve values for each record
+        NSString *name = [results stringForColumnIndex:0];
+        NSString *open = [results stringForColumnIndex:weekday * 2 - 1];
+        NSString *close = [results stringForColumnIndex:weekday * 2];
+        if (!open) open = @"Closed";
+        if (!close) close = @"Closed";
+        
+        Restaurant *r = [[Restaurant alloc] init];
+        r->name = name;
+        r->open = open;
+        r->close = close;
+        
+        if ([open isEqualToString:@"Closed"] || [close isEqualToString:@"Closed"])
+            [closedRestaurants addObject:r];
+        else
+            [openRestaurants  addObject:r];
 	}
     
-    
+    /*
     // Test data    
     for (int i = 0; i < 10; ++i)
     {
@@ -51,7 +69,7 @@
             [r->menuItems addObject:[NSString stringWithFormat:@"Item %d", j]];
         [closedRestaurants  addObject:r];
     }
-     
+    */
 }
 
 - (Restaurant*)SelectedRestaurant { 
@@ -90,26 +108,27 @@
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-
+/*
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return defaultCellStyleView.frame.size.height;
-}
+    return //defaultCellStyleView.frame.size.height;
+}*/
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSData *archivedData = [NSKeyedArchiver archivedDataWithRootObject:defaultCellStyleView];
-    RestaurantCellView *cell = [NSKeyedUnarchiver unarchiveObjectWithData:archivedData];
+    /*NSData *archivedData = [NSKeyedArchiver archivedDataWithRootObject:defaultCellStyleView];
+    RestaurantCellView *cell = [NSKeyedUnarchiver unarchiveObjectWithData:archivedData];*/
     
     Restaurant *restaurant = nil;
     restaurant = (indexPath.section == 0) ? 
     [openRestaurants objectAtIndex:indexPath.row] : [closedRestaurants objectAtIndex:indexPath.row];
-    
-    cell->nameLabel.text = restaurant->name;
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    /*cell->nameLabel.text = restaurant->name;
     cell->descriptionLabel.text = restaurant->description;
     cell->imageView = [[UIImageView alloc] initWithImage:restaurant->image];
     cell->imageView.frame = defaultCellStyleView.imageView.frame;
-    [cell addSubview:cell->imageView];    
+    [cell addSubview:cell->imageView]; */  
+    [[cell textLabel] setText:restaurant->name];
     return cell;
 }
 

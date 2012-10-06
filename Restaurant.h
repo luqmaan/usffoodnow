@@ -20,6 +20,7 @@
 @public
     NSString *name;
     NSString *description;
+    NSString *open, *close;
     UIImage *image;
     NSMutableArray *menuItems;
 }
